@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Requests</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#17243b;--blue:#52779b;--cream:#f6f1e8;--white:#fff;--muted:#667085}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,sans-serif;background:var(--cream);color:var(--navy)}
+    .hero{min-height:68vh;display:grid;place-items:center;text-align:center;padding:40px 20px;background:linear-gradient(180deg,rgba(12,25,45,.32),rgba(12,25,45,.72)),url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat;color:#fff}
+    .hero-content{max-width:760px}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+    h1{font-family:'DM Serif Display',serif;font-size:clamp(3rem,8vw,6.6rem);font-weight:400;line-height:.95;margin-bottom:22px;text-shadow:0 5px 24px rgba(0,0,0,.25)}
+    .hero p{font-size:clamp(1rem,2vw,1.25rem);line-height:1.7;max-width:620px;margin:auto;color:rgba(255,255,255,.92)}
+    main{max-width:1180px;margin:auto;padding:70px 22px 84px}
+    .heading{text-align:center;margin-bottom:38px}.heading span{color:var(--blue);font-size:.8rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+    .heading h2{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:400;margin-top:8px}
+    .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .card{background:rgba(255,255,255,.9);border:1px solid rgba(23,36,59,.08);border-radius:22px;padding:25px 22px;box-shadow:0 14px 40px rgba(23,36,59,.08);transition:.25s ease}
+    .card:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(23,36,59,.13)}
+    .avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#6f96b9,#294b6a);color:#fff;font-weight:700;margin-bottom:21px;box-shadow:0 7px 18px rgba(41,75,106,.25)}
+    .card h3{font-size:1rem;margin-bottom:11px}.card p{color:var(--muted);font-size:.92rem;line-height:1.65}
+    .verse{margin-top:46px;text-align:center;padding:30px;border-radius:22px;background:#e8dfcf;color:#39475b}.verse q{font-family:'DM Serif Display',serif;font-size:1.35rem}.verse div{margin-top:9px;font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    footer{text-align:center;padding:24px;color:#7a8290;font-size:.82rem}
+    @media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.hero{min-height:62vh}.cards{grid-template-columns:1fr}main{padding-top:52px}.card{padding:23px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">A Community of Faith</div>
+      <h1>Prayer Requests</h1>
+      <p>Let us carry one another in prayer, trusting that God hears every voice and knows every need.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="heading">
+      <span>Pray Together</span>
+      <h2>Current Prayer Requests</h2>
+    </div>
+
+    <section class="cards" aria-label="Prayer requests">
+      <article class="card"><div class="avatar">EC</div><h3>Ethan Carter</h3><p>Please pray for wisdom as I begin a new job and adjust to new responsibilities.</p></article>
+      <article class="card"><div class="avatar">GM</div><h3>Grace Miller</h3><p>Pray for my mother's recovery after surgery and for strength for our family.</p></article>
+      <article class="card"><div class="avatar">DB</div><h3>Daniel Brooks</h3><p>Please pray that I remain faithful in my daily walk with Christ.</p></article>
+      <article class="card"><div class="avatar">SR</div><h3>Sophia Reed</h3><p>Pray for peace and guidance as I make important decisions about school.</p></article>
+      <article class="card"><div class="avatar">LB</div><h3>Lucas Bennett</h3><p>Please pray for opportunities to share God's love with people around me.</p></article>
+    </section>
+
+    <section class="verse">
+      <q>Pray for one another.</q>
+      <div>James 5:16</div>
+    </section>
+  </main>
+
+  <footer>© 2026 Prayer Community</footer>
+</body>
+</html>
